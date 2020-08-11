@@ -1,1190 +1,489 @@
-
-IEEEexample.bib 
-V1.12 (2007/01/11)
-Copyright (c) 2002-2007 by Michael Shell
-See: http://www.michaelshell.org/
-for current contact information.
-
-This is an example BibTeX database for the official IEEEtran.bst
-BibTeX style file.
-
-Some entries call strings that are defined in the IEEEabrv.bib file.
-Therefore, IEEEabrv.bib should be loaded prior to this file. 
-Usage: 
-
-\bibliographystyle{./IEEEtran}
-\bibliography{./IEEEabrv,./IEEEexample}
-
-
-Support sites:
-http://www.michaelshell.org/tex/ieeetran/
-http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
-and/or
-http://www.ieee.org/
-
-*************************************************************************
-Legal Notice:
-This code is offered as-is without any warranty either expressed or
-implied; without even the implied warranty of MERCHANTABILITY or
-FITNESS FOR A PARTICULAR PURPOSE! 
-User assumes all risk.
-In no event shall IEEE or any contributor to this code be liable for
-any damages or losses, including, but not limited to, incidental,
-consequential, or any other damages, resulting from the use or misuse
-of any information contained here.
-
-All comments are the opinions of their respective authors and are not
-necessarily endorsed by the IEEE.
-
-This work is distributed under the LaTeX Project Public License (LPPL)
-( http://www.latex-project.org/ ) version 1.3, and may be freely used,
-distributed and modified. A copy of the LPPL, version 1.3, is included
-in the base LaTeX documentation of all distributions of LaTeX released
-2003/12/01 or later.
-Retain all contribution notices and credits.
-** Modified files should be clearly indicated as such, including  **
-** renaming them and changing author support contact information. **
-
-File list of work: IEEEabrv.bib, IEEEfull.bib, IEEEexample.bib,
-                   IEEEtran.bst, IEEEtranS.bst, IEEEtranSA.bst,
-                   IEEEtranN.bst, IEEEtranSN.bst, IEEEtran_bst_HOWTO.pdf
-*************************************************************************
-
-
-Note that, because the example references were taken from actual IEEE
-publications, these examples do not always contain the full amount
-of information that may be desirable (for use with other BibTeX styles).
-In particular, full names (not abbreviated with initials) should be
-entered whenever possible as some (non-IEEE) bibliography styles use
-full names. IEEEtran.bst will automatically abbreviate when it encounters
-full names.
- 
- 
- 
- 
-references for the IEEEtran.bst documentation
-IEEEtran homepage
-@electronic{IEEEhowto:IEEEtranpage,
-  author        = "Michael Shell",
-  title         = "{IEEE}tran Homepage",
-  url           = "http://www.michaelshell.org/tex/ieeetran/",
-  year          = "2007"
-}
-
-
-the distribution site for IEEEtran.bst
-@electronic{IEEEexample:shellCTANpage,
-  author        = "Michael Shell",
-  title         = "{IEEE}tran Webpage on {CTAN}",
-  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/",
-  year          = "2007"
-}
-
-
-the IEEE website
-sort key is needed for sorting styles
-@electronic{IEEEexample:IEEEwebsite,
-  title         = "The {IEEE} Website",
-  url           = "http://www.ieee.org/",
-  year          = "2007",
-  key           = "IEEE"
-}
-
-
-The BibTeX user's guide.
-The filename could have been put in the URL instead. But, there might
-be other interesting things for the user in the same directory - and
-the filename might change before the directory that contains it.
-@electronic{IEEEexample:bibtexuser,
-  author        = "Oren Patashnik",
-  title         = "{{\BibTeX}}ing",
-  howpublished  = "{btxdoc.pdf}",
-  url           = "http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/",
-  month         = feb,
-  year          = "1988"
-}
-
-
-The BibTeX style designer's guide.
-@electronic{IEEEexample:bibtexdesign,
-  author        = "Oren Patashnik",
-  title         = "Designing {{\BibTeX}} Styles",
-  howpublished  = "{btxhak.pdf}",
-  url           = "http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/",
-  month         = feb,
-  year          = "1988"
-}
-
-
-A comprehensive BibTeX tutorial.
-@electronic{IEEEexample:tamethebeast,
-  author        = "Nicolas Markey",
-  title         = "Tame the BeaST  ---  The B to X of {{\BibTeX}}",
-  url           = "http://tug.ctan.org/tex-archive/info/bibtex/tamethebeast/",
-  month         = oct,
-  year          = "2005"
-}
-
-
-The BibTeX Tips and FAQ guide.
-@electronic{IEEEexample:bibtexFAQ,
-  author        = "David Hoadley and Michael Shell",
-  title         = "{{\BibTeX}} Tips and {FAQ}",
-  howpublished  = "{btxFAQ.pdf}",
-  url           = "http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/",
-  month         = jan,
-  year          = "2007"
-}
-
-
-The TeX FAQ
-@electronic{IEEEexample:texfaq,
-  author        = "Robin Fairbairns",
-  title         = "The {{\TeX}} {FAQ}",
-  url           = "http://www.tex.ac.uk/cgi-bin/texfaq2html/",
-  month         = jan,
-  year          = "2007"
-}
-
-
-A BibTeX Guide via Examples.
-@electronic{IEEEexample:bibtexguide,
-  author        = "Ki-Joo Kim",
-  title         = "A {{\BibTeX}} Guide via Examples",
-  howpublished  = "{bibtex\_guide.pdf}",
-  url           = "http://www.geocities.com/kijoo2000/",
-  month         = apr,
-  year          = "2004"
-}
-
-
-TeX User Group Bibliography Archive
-@electronic{IEEEexample:beebe_archive,
-  author        = "Nelson H. F. Beebe",
-  title         = "{{\TeX}} User Group Bibliography Archive",
-  url           = "http://www.math.utah.edu:8080/pub/tex/bib/index-table.html",
-  month         = aug,
-  year          = "2006"
-}
-
-The natbib.sty package.
-@electronic{ctan:natbib,
-  author        = "Patrick W. Daly",
-  title         = "The natbib.sty package",
-  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/natbib/",
-  month         = sep,
-  year          = "2006"
+@Inbook{SeifEl-Nasr2013,
+author={Seif El-Nasr, Magy
+and Drachen, Anders
+and Canossa, Alessandro},
+editor={Seif El-Nasr, Magy
+and Drachen, Anders
+and Canossa, Alessandro},
+title={Introduction},
+bookTitle={Game Analytics: Maximizing the Value of Player Data},
+year={2013},
+publisher={Springer London},
+address={London},
+pages={3--12},
+abstract={Game Analytics has gained a tremendous amount of attention in game development and game research in recent years. The widespread adoption of data-driven business intelligence practices at operational, tactical and strategic levels in the game industry, combined with the integration of quantitative measures in user-oriented game research, has caused a paradigm shift. Historically, game development has not been data-driven, but this is changing as the benefits of adopting and adapting analytics to inform decision making across all levels of the industry are becoming generally known and accepted.},
+isbn={978-1-4471-4769-5},
+doi={10.1007/978-1-4471-4769-5_1},
+url={https://doi.org/10.1007/978-1-4471-4769-5_1}
+}
+
+@INPROCEEDINGS{yohannis2014gamification,
+  author={A. R. {Yohannis} and Y. {Denny Prabowo} and A. {Waworuntu}},
+  booktitle={2014 International Conference on Information Technology Systems and Innovation (ICITSI)}, 
+  title={Defining gamification: From lexical meaning and process viewpoint towards a gameful reality}, 
+  year={2014},
+  volume={},
+  number={},  
+  pages={284-289},
+  isbn={ 978-1-4799-6527-4},
+  doi={ 10.1109/ICITSI.2014.7048279},
+  url={https://ieeexplore.ieee.org/abstract/document/7048279}
+}
+
+@InProceedings{werbach2014gamification,
+  author="Werbach, Kevin",
+  editor="Spagnolli, Anna
+  and Chittaro, Luca
+  and Gamberini, Luciano",
+  title="(Re)Defining Gamification: A Process Approach",
+  booktitle="Persuasive Technology",
+  year="2014",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="266--272",
+  abstract="Gamification is a growing phenomenon of interest to both practitioners and researchers. There remains, however, uncertainty about the contours of the field. Defining gamification as ``the process of making activities more game-like'' focuses on the crucial space between the components that make up games and the holistic experience of gamefulness. It better fits real-world examples and connects gamification with the literature on persuasive design.",
+  isbn="978-3-319-07127-5",
+  doi="10.1007/978-3-319-07127-5_23",
+  url="https://link.springer.com/chapter/10.1007/978-3-319-07127-5_23"
+}
+
+@Inbook{Larusson2014,
+  author="Larusson, Johann Ari
+  and White, Brandon",
+  editor="Larusson, Johann Ari
+  and White, Brandon",
+  title="Introduction",
+  bookTitle="Learning Analytics: From Research to Practice",
+  year="2014",
+  publisher="Springer New York",
+  address="New York, NY",
+  pages="1--12",
+  abstract="Learning analytics encompasses a range of cutting-edge educational technologies, methods, models, techniques, algorithms, and best practices that provide all members of an educational community with a window into what actually takes place over the trajectory of a student's learning. This chapter provides an introduction to the volume more generally, which attempts to provide an entry point into the field by showcasing the latest results, strategies, guidelines, methods, models, and tools. Collecting all of this information in one volume will allow researchers, instructors, educational administrators, and others interested in learning analytics to take stock of ongoing efforts in the field depending upon their unique institutional interests. As a field with a broad appeal, simply navigating the extant literature of learning analytics, let alone attempting to put any of those principles into practice, can prove daunting. The volume's chapters each attempt to consolidate much of the available literature while putting forth best practice guidelines or model case studies that might prove of interest to particular types of readers. As such, this book is organized not around common problems or the mounting complexity of its efforts, but rather around the kinds of communities that each chapter attempts to address.",
+  isbn="978-1-4614-3305-7",
+  doi="10.1007/978-1-4614-3305-7_1",
+  url="https://doi.org/10.1007/978-1-4614-3305-7_1"
+}
+
+@Inbook{Loh2015,
+  author="Loh, Christian Sebastian
+  and Sheng, Yanyan
+  and Ifenthaler, Dirk",
+  editor="Loh, Christian Sebastian
+  and Sheng, Yanyan
+  and Ifenthaler, Dirk",
+  title="Serious Games Analytics: Theoretical Framework",
+  bookTitle="Serious Games Analytics: Methodologies for Performance Measurement, Assessment, and Improvement",
+  year="2015",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="3--29",
+  abstract="``Serious Games'' is a unique industry that is concerned with the training/learning performance assessment of its clients. It is one of three digital technology industries (along with digital games, and online learning) that are rapidly advancing into the arena of analytics. The analytics from these industries all came from the tracing of user-generated data as they interacted with the systems, but differed from one another in the primary purposes for such analytics. For example, the purpose of game analytics is to support the growth of digital (entertainment) games, while that of learning analytics is to support the online learning industries. Although some game and learning analytics can indeed be used in serious games, they lack specific metrics and methods that outline the effectiveness of serious games---an important feature to stakeholders. Serious Games Analytics need to provide (actionable) insights that are of values to the stakeholders---specific strategies/policies to improve the serious games, and to (re)train or remediate play-learners for performance improvement. Since the performance metrics from one industry are unlikely to transfer well into another industry, those that are optimal for use in the Serious Games industry must be properly identified as Serious Games Analytics---to properly measure, assess, and improve performance with serious games.",
+  isbn="978-3-319-05834-4",
+  doi="10.1007/978-3-319-05834-4_1",
+  url="https://doi.org/10.1007/978-3-319-05834-4_1"
+}
+
+@book{michael2005serious,
+  author = {Michael, David R. and Chen, Sandra L.},
+  title = {Serious Games: Games That Educate, Train, and Inform},
+  year = {2005},
+  isbn = {1592006221},
+  publisher = {Muska \& Lipman/Premier-Trade},
+  doi = {10.5555/1051239},
+  isbn = { 978-1592006229},
+  url = {https://www.amazon.com/Serious-Games-Educate-Train-Inform/dp/1592006221}
+}
+
+@INPROCEEDINGS{yohannis2015sort,
+  author={A. {Yohannis} and Y. {Prabowo}},
+  booktitle={2015 7th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games)}, 
+  title={Sort Attack: Visualization and Gamification of Sorting Algorithm Learning}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={1-8},
+  isbn={978-1-4799-8102-1},
+  doi={10.1109/VS-GAMES.2015.7295785},
+  url={https://ieeexplore.ieee.org/abstract/document/7295785}
+}
+
+@INPROCEEDINGS{yohannis2015visualization,
+  author={A. R. {Yohannis} and Y. D. {Prabowo}},
+  booktitle={2015 International Conference on Computer, Control, Informatics and its Applications (IC3INA)}, 
+  title={Visualization of user-learning game interaction unveiling learner's learning patterns}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={56-61},
+  doi={10.1109/IC3INA.2015.7377746},
+  isbn={978-1-4799-8773-3},
+  url={https://ieeexplore.ieee.org/abstract/document/7377746}
+}
+
+@article{dietz2013using,
+  title={Using learning analytics to predict (and improve) student success: A faculty perspective},
+  author={Dietz-Uhler, Beth and Hurn, Janet E},
+  journal={Journal of interactive online learning},
+  volume={12},
+  number={1},
+  pages={17--26},
+  year={2013},
+  url={http://www.ncolr.org/jiol/issues/pdf/12.1.2.pdf},
+  issn={1541-4914}
+}
+
+@Inbook{Baker2014,
+  author="Baker, Ryan Shaun
+  and Inventado, Paul Salvador",
+  editor="Larusson, Johann Ari
+  and White, Brandon",
+  title="Educational Data Mining and Learning Analytics",
+  bookTitle="Learning Analytics: From Research to Practice",
+  year="2014",
+  publisher="Springer New York",
+  address="New York, NY",
+  pages="61--75",
+  abstract="In recent years, two communities have grown around a joint interest on how big data can be exploited to benefit education and the science of learning: Educational Data Mining and Learning Analytics. This article discusses the relationship between these two communities, and the key methods and approaches of educational data mining. The article discusses how these methods emerged in the early days of research in this area, which methods have seen particular interest in the EDM and learning analytics communities, and how this has changed as the field matures and has moved to making significant contributions to both educational research and practice.",
+  isbn="978-1-4614-3305-7",
+  doi="10.1007/978-1-4614-3305-7_4",
+  url="https://doi.org/10.1007/978-1-4614-3305-7_4"
+}
+
+@article{gasevic2015let,
+  title={Let's not forget: Learning analytics are about learning},
+  author={Gasevic, Dragan and Dawson, Shane and Siemens, George},
+  journal={TechTrends},
+  volume={59},
+  number={1},
+  pages={64},
+  year={2015},
+  publisher={Springer Science \& Business Media}
+}
+
+@Inbook{White2014,
+  author="White, Brandon
+  and Larusson, Johann Ari",
+  editor="Larusson, Johann Ari
+  and White, Brandon",
+  title="Identifying Points for Pedagogical Intervention Based on Student Writing: Two Case Studies for the ``Point of Originality''",
+  bookTitle="Learning Analytics: From Research to Practice",
+  year="2014",
+  publisher="Springer New York",
+  address="New York, NY",
+  pages="157--190",
+  abstract="Integrating technology into higher education curricula to extend the physical boundaries of the classroom can be of significant value, as it enables students to interact and learn outside of class time. This is particularly true in larger gateway courses, where there are fewer opportunities for students to engage in higher-order thinking and to construct their own understanding of core concepts. While the introduction of technology like blogging can create a successful learning experience, any large number of students creates additional noise that makes it harder for instructors to isolate the students most in need of help. This chapter describes an analysis method and tool that uses lexical analysis to allow an instructor to automatically track how a student's written language migrates from mere paraphrase to mastery, isolating the moment when the student's understanding of core concepts best demonstrates an ability to place that concept into his or her own words, a moment that we have chosen to call the ``Point of Originality.'' Through two case studies, higher point of originality values is shown to correspond strongly with likely student achievement.",
+  isbn="978-1-4614-3305-7",
+  doi="10.1007/978-1-4614-3305-7_8",
+  url="https://doi.org/10.1007/978-1-4614-3305-7_8"
+}
+
+@inproceedings{PhilMaorPres2012rq,
+  author = { Rob Phillips and Dorit Maor and Greg Preston and Wendy Cumming-Potvin },
+  title = { Exploring Learning Analytics as Indicators of Study Behaviour },
+  editor = { Tel Amiel and Brent Wilson },
+  booktitle = { Proceedings of EdMedia + Innovate Learning 2012 },
+  year = { 2012 },
+  month = { June },
+  pages = { 2861--2867 },
+  address = { Denver, Colorado, USA },
+  publisher = { Association for the Advancement of Computing in Education (AACE) },
+  url = { https://www.learntechlib.org/p/41174 },
+  abstract = { In this paper we describe the use of learning analytics to provide indicators of students’ behaviour in technology-enhanced learning environments. We first provide an overview of the emerging field of learning analytics, and then describe a learning-analytic tool which reports student use of the Lectopia lecture capture system across the weeks of a semester, both collectively and individually. Observation of the data provided by the system enabled us to develop a set of proto-theoretical categories of behaviour, with associated algorithms to numerically identify these categories. Finally, we describe the use of the learning-analytic tool in a mixed methods approach to investigate in depth how students, with different characteristics, engage with and learn from technology-enhanced learning environments. }
+}
+
+@inproceedings{blikstein2011analytics,
+  author = {Blikstein, Paulo},
+  title = {Using Learning Analytics to Assess Students’ Behavior in Open-Ended Programming Tasks},
+  year = {2011},
+  isbn = {9781450309448},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2090116.2090132},
+  doi = {10.1145/2090116.2090132},
+  booktitle = {Proceedings of the 1st International Conference on Learning Analytics and Knowledge},
+  pages = {110–116},
+  numpages = {7},
+  keywords = {logging, educational data mining, learning analytics, automated assessment, constructionism},
+  location = {Banff, Alberta, Canada},
+  series = {LAK ’11},
+  doi = {10.1145/2090116.2090132}
+}
+
+@inproceedings{wolff2013retention,
+  author = {Wolff, Annika and Zdrahal, Zdenek and Nikolov, Andriy and Pantucek, Michal},
+  title = {Improving Retention: Predicting at-Risk Students by Analysing Clicking Behaviour in a Virtual Learning Environment},
+  year = {2013},
+  isbn = {9781450317856},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2460296.2460324},
+  doi = {10.1145/2460296.2460324},
+  booktitle = {Proceedings of the Third International Conference on Learning Analytics and Knowledge},
+  pages = {145–149},
+  numpages = {5},
+  keywords = {distance learning, predictive modelling, retention, virtual learning environment, student data},
+  location = {Leuven, Belgium},
+  series = {LAK ’13},
+  doi = {10.1145/2460296.2460324}
+}
+
+@article{masip2011capturing,
+  title={Capturing and analyzing student behavior in a virtual learning environment: A case study on usage of library resources},
+  author={Masip, David and Minguill{\'o}n, Juli{\`a} and Mor, Enric},
+  journal={Handbook of educational data mining},
+  pages={339--351},
+  year={2011},
+  publisher={CRC Press Boca Raton, FL},
+  url={https://www.taylorfrancis.com/books/e/9780429130120/chapters/10.1201/b10274-31},
+  doi={https://doi.org/10.1201/b10274},
+  isbn={9780429130120}
+}
+
+@article{AGUDOPEREGRINA2014542,
+  title = "Can we predict success from log data in VLEs? Classification of interactions for learning analytics and their relation with performance in VLE-supported F2F and online learning",
+  journal = "Computers in Human Behavior",
+  volume = "31",
+  pages = "542 - 550",
+  year = "2014",
+  issn = "0747-5632",
+  doi = "https://doi.org/10.1016/j.chb.2013.05.031",
+  url = "http://www.sciencedirect.com/science/article/pii/S074756321300188X",
+  author = "Ángel F. Agudo-Peregrina and Santiago Iglesias-Pradas and Miguel Ángel Conde-González and Ángel Hernández-García",
+  keywords = "Interactions, Educational data, e-Learning, Learning analytics, Academic performance, Virtual learning environments",
+  abstract = "Learning analytics is the analysis of electronic learning data which allows teachers, course designers and administrators of virtual learning environments to search for unobserved patterns and underlying information in learning processes. The main aim of learning analytics is to improve learning outcomes and the overall learning process in electronic learning virtual classrooms and computer-supported education. The most basic unit of learning data in virtual learning environments for learning analytics is the interaction, but there is no consensus yet on which interactions are relevant for effective learning. Drawing upon extant literature, this research defines three system-independent classifications of interactions and evaluates the relation of their components with academic performance across two different learning modalities: virtual learning environment (VLE) supported face-to-face (F2F) and online learning. In order to do so, we performed an empirical study with data from six online and two VLE-supported F2F courses. Data extraction and analysis required the development of an ad hoc tool based on the proposed interaction classification. The main finding from this research is that, for each classification, there is a relation between some type of interactions and academic performance in online courses, whereas this relation is non-significant in the case of VLE-supported F2F courses. Implications for theory and practice are discussed next."
+}
+
+@INPROCEEDINGS{fortenbacher2013lemo,
+  author={A. {Fortenbacher} and L. {Beuster} and M. {Elkina} and L. {Kappe} and A. {Merceron} and A. {Pursian} and S. {Schwarzrock} and B. {Wenzlaff}},
+  booktitle={2013 IEEE 7th International Conference on Intelligent Data Acquisition and Advanced Computing Systems (IDAACS)}, 
+  title={LeMo: A learning analytics application focussing on user path analysis and interactive visualization}, 
+  year={2013},
+  volume={02},
+  number={},
+  pages={748-753},
+  doi={10.1109/IDAACS.2013.6663025},
+  isbn={978-1-4799-1426-5},
+  url={https://ieeexplore.ieee.org/abstract/document/6663025}
+}
+
+@ARTICLE{bauckhage2015age,
+  author={C. {Bauckhage} and A. {Drachen} and C. {Thurau}},
+  journal={IEEE Transactions on Computational Intelligence and AI in Games}, 
+  title={The Age of Analytics}, 
+  year={2015},
+  volume={7},
+  number={3},
+  pages={205-206},
+  doi={10.1109/TCIAIG.2015.2467166},
+  issn={1943-068X},
+  url={https://ieeexplore.ieee.org/abstract/document/7254211}
+}
+
+@INPROCEEDINGS{drachen2012guns,
+  author={A. {Drachen} and R. {Sifa} and C. {Bauckhage} and C. {Thurau}},
+  booktitle={2012 IEEE Conference on Computational Intelligence and Games (CIG)}, 
+  title={Guns, swords and data: Clustering of player behavior in computer games in the wild}, 
+  year={2012},
+  volume={},
+  number={},  
+  pages={163-170},
+  url={https://ieeexplore.ieee.org/abstract/document/6374152},
+  isbn={978-1-4673-1193-9},
+  doi={ 10.1109/CIG.2012.6374152}
+}
+
+@INPROCEEDINGS{hauge2014analytics,
+  author={J. B. {Hauge} and R. {Berta} and G. {Fiucci} and B. F. {Manjón} and C. {Padrón-Nápoles} and W. {Westra} and R. {Nadolski}},
+  booktitle={2014 IEEE 14th International Conference on Advanced Learning Technologies}, 
+  title={Implications of Learning Analytics for Serious Game Design}, 
+  year={2014},
+  volume={},
+  number={},
+  pages={230-232},
+  url={https://ieeexplore.ieee.org/abstract/document/6901445},
+  isbn={978-1-4799-4038-7},
+  issn={2161-3761},
+  doi={10.1109/ICALT.2014.73}
+}
+
+@INPROCEEDINGS{callaghan2014analytics,
+  author={M. {Callaghan} and N. {McShane} and A. G. {Eguíluz}},
+  booktitle={2014 11th International Conference on Remote Engineering and Virtual Instrumentation (REV)}, 
+  title={Using game analytics to measure student engagement/retention for engineering education}, 
+  year={2014},
+  volume={},
+  number={},  
+  pages={297-302},
+  url={https://ieeexplore.ieee.org/abstract/document/6784174},
+  isbn={978-1-4799-2024-2},
+  doi={10.1109/REV.2014.6784174}
+}
+
+@inproceedings{hicks2016analytics,
+  author = {Hicks, Drew and Eagle, Michael and Rowe, Elizabeth and Asbell-Clarke, Jodi and Edwards, Teon and Barnes, Tiffany},
+  title = {Using Game Analytics to Evaluate Puzzle Design and Level Progression in a Serious Game},
+  year = {2016},
+  isbn = {9781450341905},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2883851.2883953},
+  doi = {10.1145/2883851.2883953},
+  booktitle = {Proceedings of the Sixth International Conference on Learning Analytics \& Knowledge},
+  pages = {440–448},
+  numpages = {9},
+  keywords = {survival analysis, complex problem solving, serious games, educational data mining, learning analytics},
+  location = {Edinburgh, United Kingdom},
+  series = {LAK ’16}
+}
+
+@article{kerr2012identifying,
+  title={Identifying key features of student performance in educational video games and simulations through cluster analysis.},
+  author={Kerr, Deirdre and Chung, Gregory KWK},
+  journal={Journal of Educational Data Mining},
+  volume={4},
+  number={1},
+  pages={144--182},
+  year={2012},
+  publisher={ERIC},
+  issn={EISSN-2157-2100},
+  uril={https://eric.ed.gov/?id=EJ1115399}
+}
+
+@Inbook{Liu2015,
+  author="Liu, Min
+  and Kang, Jina
+  and Lee, Jaejin
+  and Winzeler, Elena
+  and Liu, Sa",
+  editor="Loh, Christian Sebastian
+  and Sheng, Yanyan
+  and Ifenthaler, Dirk",
+  title="Examining Through Visualization What Tools Learners Access as They Play a Serious Game for Middle School Science",
+  bookTitle="Serious Games Analytics: Methodologies for Performance Measurement, Assessment, and Improvement",
+  year="2015",
+  publisher="Springer International Publishing",
+  address="Cham",
+  pages="181--208",
+  abstract="This study intends to use data visualization to examine learners' behaviors in a 3D immersive serious game for middle school science to understand how the players interact with various features to solve the central problem. The analysis combined game log data with measures of in-game performance and learners' goal orientations. The findings indicated students in the high performance and mastery-oriented groups tended to use the tools more appropriately relative to the stage they were at in the problem-solving process, and more productively than students in low performance groups. The use of data visualization with log data in combination with more traditional measures shows visualization as a promising technique in analytics with multiple data sets that can facilitate the interpretation of the relationships among data points at no cost to the complexity of the data. Design implications and future applications of serious games analytics and data visualization to the serious game are discussed.",
+  isbn="978-3-319-05834-4",
+  doi="10.1007/978-3-319-05834-4_8",
+  url="https://doi.org/10.1007/978-3-319-05834-4_8"
+}
+
+@article{boticki2013sorting,
+  author = {Boticki, Ivica and Barisic, Ante and Martin, Sergio and Drljevic, Neven},
+  title = {Teaching and learning computer science sorting algorithms with mobile devices: A case study},
+  journal = {Computer Applications in Engineering Education},
+  volume = {21},
+  number = {S1},
+  pages = {E41-E50},
+  keywords = {mobile learning, engineering education, sorting algorithms},
+  doi = {10.1002/cae.21561},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cae.21561},
+  eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/cae.21561},
+  abstract = {Abstract In this article, we present a semester-long study on using smartphone devices in computing engineering education. We developed Sortko, an Android-based smartphone application for learning sorting algorithms, an important undergraduate computer science topic. The application consists of four main components—the module for interactive sorting, the scaffolding module, the motivational module, and the graphical user interface module, each with a distinct role of helping students in learning sorting algorithms. Our research methodology included data collection with administered two surveys, collected exam results and recorded application usage data. Analysis of the collected data shows our approach is an effective way of learning sorting algorithms. © 2012 Wiley Periodicals, Inc. Comput Appl Eng Educ 21:E41–E50, 2013},
+  year = {2013}
+}
+
+@article{shapiro1965variance,
+  ISSN = {00063444},
+  URL = {http://www.jstor.org/stable/2333709},
+  author = {S. S. Shapiro and M. B. Wilk},
+  journal = {Biometrika},
+  number = {3/4},
+  pages = {591--611},
+  publisher = {[Oxford University Press, Biometrika Trust]},
+  title = {An Analysis of Variance Test for Normality (Complete Samples)},
+  volume = {52},
+  year = {1965},
+  doi = {10.2307/2333709}
+}
+
+@article{kendall1938correlation,
+  ISSN = {00063444},
+  URL = {http://www.jstor.org/stable/2332226},
+  author = {M. G. Kendall},
+  journal = {Biometrika},
+  number = {1/2},
+  pages = {81--93},
+  publisher = {[Oxford University Press, Biometrika Trust]},
+  title = {A New Measure of Rank Correlation},
+  volume = {30},
+  year = {1938},
+  doi = {10.2307/2332226}
+}
+
+@Inbook{Austin2013,
+  author="Austin, Sarita",
+  editor="Volkmar, Fred R.",
+  title="Didactic Approaches",
+  bookTitle="Encyclopedia of Autism Spectrum Disorders",
+  year="2013",
+  publisher="Springer New York",
+  address="New York, NY",
+  pages="947--948",
+  isbn="978-1-4419-1698-3",
+  doi="10.1007/978-1-4419-1698-3_2005",
+  url="https://doi.org/10.1007/978-1-4419-1698-3_2005"
+}
+
+@Inbook{McComas2014,
+  author="McComas, William F.",
+  editor="McComas, William F.",
+  title="Constructivism",
+  bookTitle="The Language of Science Education: An Expanded Glossary of Key Terms and Concepts in Science Teaching and Learning",
+  year="2014",
+  publisher="SensePublishers",
+  address="Rotterdam",
+  pages="21--22",
+  abstract="To understand the idea of constructivism and the power of pre-existing knowledge, consider trying to convince a child who believes the Earth is flat (this is called a misconception or alternative conception) that it is actually round.",
+  isbn="978-94-6209-497-0",
+  doi="10.1007/978-94-6209-497-0_19",
+  url="https://doi.org/10.1007/978-94-6209-497-0_19"
+}
+
+@book{kolb2014experiential,
+  title={Experiential learning: Experience as the source of learning and development},
+  author={Kolb, David A},
+  year={2014},
+  publisher={FT press},
+  isbn={ 978-0133892406},
+  url={https://www.amazon.com/Experiential-Learning-Experience-Source-Development-dp-0133892409/dp/0133892409}
+}
+
+@Inbook{Fitzgerald2009,
+  author="Fitzgerald, Deirdre Lee",
+  editor="Gullotta, Thomas P.
+  and Bloom, Martin
+  and Gullotta, Christianne F.
+  and Messina, Jennifer C.",
+  title="How Development Affects Learning: Lessons Learned from Developmental, Cognitive, and Natural Science",
+  bookTitle="A Blueprint for Promoting Academic and Social Competence in After-School Programs",
+  year="2009",
+  publisher="Springer US",
+  address="Boston, MA",
+  pages="21--42",
+  isbn="978-0-387-79920-9",
+  doi="10.1007/978-0-387-79920-9_2",
+  url="https://doi.org/10.1007/978-0-387-79920-9_2"
+}
+
+@Inbook{Jozefowiez2012,
+  author="Jozefowiez, Jeremie",
+  editor="Seel, Norbert M.",
+  title="Associative Learning",
+  bookTitle="Encyclopedia of the Sciences of Learning",
+  year="2012",
+  publisher="Springer US",
+  address="Boston, MA",
+  pages="330--334",
+  isbn="978-1-4419-1428-6",
+  doi="10.1007/978-1-4419-1428-6_703",
+  url="https://doi.org/10.1007/978-1-4419-1428-6_703"
 }
 
-The url.sty package.
-@electronic{IEEEexample:urlsty,
-  author        = "Donald Arseneau",
-  title         = "The url.sty Package",
-  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/misc/",
-  month         = jun,
-  year          = "2005",
-}
-
-
-The hyperref.sty package.
-@electronic{IEEEexample:hyperrefsty,
-  author        = "Sebastian Rahtz and Heiko Oberdiek",
-  title         = "The hyperref.sty Package",
-  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref/",
-  month         = nov,
-  year          = "2006",
-}
-
-
-The breakurl.sty package.
-@electronic{IEEEexample:breakurl,
-  author        = "Vilar Camara Neto",
-  title         = "The breakurl.sty Package",
-  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/breakurl/",
-  month         = aug,
-  year          = "2006",
-}
-
-
-The Babel package.
-@electronic{IEEEexample:babel,
-  author        = "Johannes Braams",
-  title         = "The Babel Package",
-  url           = "http://www.ctan.org/tex-archive/macros/latex/required/babel/",
-  month         = nov,
-  year          = "2005",
-}
 
 
-The multibib package.
-@electronic{IEEEexample:multibibsty,
-  author        = "Thorsten Hansen",
-  title         = "The multibib.sty package",
-  url           = "http://www.ctan.org/tex-archive/macros/latex/contrib/multibib/",
-  month         = jan,
-  year          = "2004"
-}
-
-
-The biblatex package.
-@electronic{IEEEexample:biblatex,
-  author        = "Philipp Lehman",
-  title         = "The biblatex package",
-  url           = "http://www.ctan.org/tex-archive/macros/latex/exptl/biblatex/",
-  month         = jan,
-  year          = "2007"
-}
-
 
-
-The three most common and typical types of references used in
-IEEE publications:
-
-an article in a journal
-Note the use of the IEEE_J_EDL string, defined in the IEEEabrv.bib file,
-for the journal name. IEEEtran.bst defines the BibTeX standard three
-letter month codes per IEEE style.
-From the June 2002 issue of "IEEE Transactions on Electron Devices",
-page 996, reference #16.
-@article{IEEEexample:article_typical,
-  author        = "S. Zhang and C. Zhu and J. K. O. Sin and P. K. T. Mok",
-  title         = "A Novel Ultrathin Elevated Channel Low-temperature 
-                   Poly-{Si} {TFT}",
-  journal       = IEEE_J_EDL,
-  volume        = "20",
-  month         = nov,
-  year          = "1999",
-  pages         = "569-571"
-}
-
-
-journal article using et al.
-The (five) authors are actually: F. Delorme, S. Slempkes, G. Alibert, 
-B. Rose, J. Brandon
-The month (July) was not given here.
-From the September 1998 issue of "IEEE Journal on Selected Areas in
-Communications", page 1257, reference #28.
-@article{IEEEexample:articleetal,
-  author        = "F. Delorme and others",
-  title         = "Butt-jointed {DBR} Laser With 15 {nm} Tunability Grown
-                   in Three {MOVPE} Steps",
-  journal       = "Electron. Lett.",
-  volume        = "31",
-  number        = "15",
-  year          = "1995",
-  pages         = "1244-1245"
-}
-
-
-a paper in a conference proceedings
-"conference" can be used as an alias for "inproceedings"
-From the June 2002 issue of "Journal of Microelectromechanical Systems",
-page 205, reference #16.
-@inproceedings{IEEEexample:conf_typical,
-  author        = "R. K. Gupta and S. D. Senturia",
-  title         = "Pull-in Time Dynamics as a Measure of Absolute Pressure",
-  booktitle     = "Proc. {IEEE} International Workshop on
-                   Microelectromechanical Systems ({MEMS}'97)",
-  address       = "Nagoya, Japan",
-  month         = jan,
-  year          = "1997",
-  pages         = "290-294"
-}
-
-
-a book
-From the May 2002 issue of "IEEE Transactions on Magnetics",
-page 1466, reference #4.
-@book{IEEEexample:book_typical,
-  author        = "B. D. Cullity",
-  title         = "Introduction to Magnetic Materials",
-  publisher     = "Addison-Wesley",
-  address       = "Reading, MA",
-  year          = "1972"
-}
-
-
-
-
-Other examples
-
-journal article with large page numbers, IEEE will divide numbers 5 digits
-or longer into groups of three with small spaces between them. Page ranges
-can be separated via either "-" or "--", IEEEtran.bst will automatically
-convert the separator dash(es) to "--".
-Authors and/or IEEE do not always provide/use the journal number, but it
-was used in this case. IEEEtran.bst can be configured to ignore journal
-numbers if desired.
-From the August 2000 issue of "IEEE Photonics Technology Letters",
-page 1039, reference #11.
-@article{IEEEexample:articlelargepages,
-  author        = "A. Castaldini and A. Cavallini and B. Fraboni
-                   and P. Fernandez and J. Piqueras",
-  title         = "Midgap Traps Related to Compensation Processes in
-                   {CdTe} Alloys",
-  journal       = "Phys. Rev. B.",
-  volume        = "56",
-  number        = "23",
-  year          = "1997",
-  pages         = "14897-14900"
-}
-
-
-journal article with dual months 
-use the BibTeX "#" concatenation operator
-From the March 2002 issue of "IEEE Transactions on Mechatronics",
-page 21, reference #8.
-@article{IEEEexample:articledualmonths,
-  author        = "Y. Okada and K. Dejima and T. Ohishi",
-  title         = "Analysis and Comparison of {PM} Synchronous Motor and
-                   Induction Motor Type Magnetic Bearings",
-  journal       = IEEE_J_IA,
-  volume        = "31",
-  month         = sep # "/" # oct,
-  year          = "1995",
-  pages         = "1047-1053"
-}
-
-
-journal article to be published as a misc entry type
-date information like month and year is optional 
-However, the article form like that below may be a better approach.
-From the May 2002 issue of "IEEE Journal of Selected Areas in 
-Communication", page 725, reference #3.
-@misc{IEEEexample:TBPmisc,
-  author        = "M. Coates and A. Hero and R. Nowak and B. Yu",
-  title         = "Internet Tomography",
-  howpublished  = IEEE_M_SP,
-  month         = may,
-  year          = "2002",
-  note          = "to be published"
-}
-
-
-journal article to be published as an article entry type
-year is required, so if absent, use the year field to hold
-the "submitted for publication" in order to avoid a warning for
-the missing year field.
-From the June 2002 issue of "IEEE Transactions on Information Theory",
-page 1461, reference #21.
-@article{IEEEexample:TBParticle,
-  author        = "N. Kahale and R. Urbanke",
-  title         = "On the Minimum Distance of Parallel and Serially
-                   Concatenated Codes",
-  journal       = IEEE_J_IT,
-  year          = "submitted for publication"
-}
-
-
-
-
-
-book with editor and no author
-From the June 2002 issue of "IEEE Transactions on Information Theory",
-page 1725, reference #1.
-@book{IEEEexample:bookwitheditor,
-  editor        = "J. C. Candy and G. C. Temes",
-  title         = "Oversampling Delta-Sigma Data Converters Theory,
-                   Design and Simulation",
-  publisher     = "{IEEE} Press.",
-  address       = "New York",
-  year          = "1992"
-}
-
-
-book with edition, author and editor
-Note that the standard BibTeX styles do not support book entries with both
-author and editor fields, but IEEEtran.bst does.
-The standard BibTeX way of specifying the edition is to use capitalized
-ordinal words such as "First", "Second", etc. Most .bst files can convert
-up to about "Fifth" into the format needed. IEEEtran.bst can convert up
-to "Tenth" to the "Arabic ordinal" form IEEE uses (e.g., "10th"). For
-editions over the tenth, it is best to use the "Arabic ordinal" form for
-IEEE related work (e.g., "101st")
-Note how "Jr." has to be entered.
-From the May 2002 issue of "Journal of Lightwave Technology", page 856,
-reference #17.
-@book{IEEEexample:book,
-  author        = "S. M. Metev and V. P. Veiko",
-  editor        = "Osgood, Jr., R. M.",
-  title         = "Laser Assisted Microtechnology",
-  edition       = "Second",
-  publisher     = "Springer-Verlag",
-  address       = "Berlin, Germany",
-  year          = "1998"
-}
-
-
-book with series and volume
-From the January 2000 issue of "IEEE Transactions on Communications",
-page 11, reference #31.
-@book{IEEEexample:bookwithseriesvolume,
-  editor        = "J. Breckling",
-  title         = "The Analysis of Directional Time Series: Applications to
-                   Wind Speed and Direction",
-  series        = "Lecture Notes in Statistics",
-  publisher     = "Springer",
-  address       = "Berlin, Germany",
-  year          = "1989",
-  volume        = "61"
-}
-
-
-inbook with chapter number. The pages field could also have been given.
-The chapter number could be changed to something else such as a section
-number via the type field: type = "sec.".
-From the May 2002 issue of "IEEE Transactions on Circuits and Systems---I: 
-Fundamental Applications and Theory", page 638, reference #22.
-@inbook{IEEEexample:inbook,
-  author        = "H. E. Rose",
-  title         = "A Course in Number Theory",
-  publisher     = "Oxford Univ. Press",
-  address       = "New York, NY",
-  year          = "1988",
-  chapter       = "3"
-}
-
-
-inbook with pages and note. The language field is not set to Russian
-because the title is presented here in its translated, English, form.
-From the May 2002 issue of "IEEE Transactions on Magnetics", page 1533,
-reference #5.
-@inbook{IEEEexample:inbookpagesnote,
-  author        = "B. K. Bul",
-  title         = "Theory Principles and Design of Magnetic Circuits",
-  publisher     = "Energia Press",
-  address       = "Moscow",
-  year          = "1964",
-  pages         = "464",
-  note          = "(in Russian)"
-}
-
-
-
-
-
-incollection with author and editor
-From the May 2002 issue of "Journal of Lightwave Technology",
-page 807, reference #7.
-@incollection{IEEEexample:incollection,
-  author        = "W. V. Sorin",
-  editor        = "D. Derickson",
-  title         = "Optical Reflectometry for Component Characterization",
-  booktitle     = "Fiber Optic Test and Measurement",
-  publisher     = "Prentice-Hall",
-  address       = "Englewood Cliffs, NJ",
-  year          = "1998"
-}
-
-
-incollection with series
-From the April 2000 issue of "IEEE Transactions on Communication",
-page 609, reference #3.
-@incollection{IEEEexample:incollectionwithseries,
-  author        = "J. B. Anderson and K. Tepe",
-  title         = "Properties of the Tailbiting {BCJR} Decoder",
-  booktitle     = "Codes, Systems and Graphical Models",
-  series        = "{IMA} Volumes in Mathematics and Its Applications",
-  publisher     = "Springer-Verlag",
-  address       = "New York",
-  year          = "2000"
-  
-}
-
-
-incollection with author, editor, chapter and pages
-From the January 2000 issue of "IEEE Transactions on Communications",
-page 16, reference #9.
-@incollection{IEEEexample:incollection_chpp,
-  author        = "P. Hedelin and P. Knagenhjelm and M. Skoglund",
-  editor        = "W. B. Kleijn and K. K. Paliwal",
-  title         = "Theory for Transmission of Vector Quantization Data",
-  booktitle     = "Speech Coding and Synthesis",
-  publisher     = "Elsevier Science",
-  address       = "Amsterdam, The Netherlands",
-  year          = "1995",
-  chapter       = "10",
-  pages         = "347-396"
-}
-
-
-incollection with a large number of authors, some authors/journals will
-use et al. for so many names. IEEEtran.bst can be configured to do this
-if desired, or "R. M. A. Dawson and others" can be used instead.
-Note that IEEE may not include the publisher for incollection entries -
-IEEEtran.bst will not issue a warning if the publisher is missing for
-incollections - but other .bst files often will.
-From the June 2002 issue of "IEEE Transactions on Electron Devices",
-page 996, reference #12.
-@incollection{IEEEexample:incollectionmanyauthors,
-  author        = "R. M. A. Dawson and Z. Shen and D. A. Furst and
-                   S. Connor and J. Hsu and M. G. Kane and R. G. Stewart and
-                   A. Ipri and C. N. King and P. J. Green and R. T. Flegal
-                   and S. Pearson and W. A. Barrow and E. Dickey and K. Ping
-                   and C. W. Tang and S. Van. Slyke and
-                   F. Chen and J. Shi and J. C. Sturm and M. H. Lu",
-  title         = "Design of an Improved Pixel for a Polysilicon 
-                   Active-Matrix Organic {LED} Display",
-  booktitle     = "{SID} Tech. Dig.",
-  volume        = "29",
-  year          = "1998",
-  pages         = "11-14"
-}
-
-
-
-
-
-A Motorola data book as a manual
-It is somewhat unusual to include the data book part number.
-in the title. It might be more correct to put this information
-in the howpublished field instead.
-From the December 2000 issue of "IEEE Transactions on Communications",
-page 1986, reference #10.
-@manual{IEEEexample:motmanual,
-  title         = "{FLEXChip} Signal Processor ({MC68175/D})",
-  organization  = "Motorola",
-  year          = "1996"
-}
-
-
-same reference, but using IEEEtran's howpublished extension
-@manual{IEEEexample:motmanualhowpub,
-  title         = "{FLEXChip} Signal Processor",
-  howpublished  = "{MC68175/D}",
-  organization  = "Motorola",
-  year          = "1996"
-}
-
-
-
-
-conference paper with an address and days. Some journals capitalize the
-letters in "Globecom", this one did not.
-From the May 2002 issue of "IEEE Transactions on Communications",
-page 697, reference #12.
-@inproceedings{IEEEexample:confwithadddays,
-  author        = "M. S. Yee and L. Hanzo",
-  title         = "Radial Basis Function Decision Feedback Equaliser
-                   Assisted Burst-by-burst Adaptive Modulation",
-  booktitle     = "Proc. {IEEE} Globecom '99",
-  address       = "Rio de Janeiro, Brazil",
-  month         = dec # " 5--9,",
-  year          = "1999",
-  pages         = "2183-2187"
-}
-
-
-conference paper with volume number. A conference proceedings with a vol
-number is a little uncommon, note that the vol number is placed
-before the address in the formatted bibliography entry
-From the April 2002 issue of "IEEE/ACM Transactions on Networking",
-page 181, reference #26.
-@inproceedings{IEEEexample:confwithvolume,
-  author        = "M. Yajnik and S. B. Moon and J. Kurose and D. Towsley",
-  title         = "Measurement and Modeling of the Temporal Dependence in
-                   Packet Loss",
-  booktitle     = "Proc. {IEEE} {INFOCOM}'99",
-  volume        = "1",
-  address       = "New York, NY",
-  month         = mar,
-  year          = "1999",
-  pages         = "345-352"
-}
-
-
-conference paper with a paper number, the type field can be used to
-override the word "paper", e.g., type = "postdeadline paper". A type
-can be given even without a paper  field.
-Also, IEEEtran.bst can be configured to ignore paper numbers and types.
-From the May 2002 issue of "Journal of Lightwave Technology",
-page 807, reference #4.
-@inproceedings{IEEEexample:confwithpaper,
-  author        = "M. Wegmuller and J. P. von der Weid and P. Oberson
-                   and N. Gisin",
-  title         = "High Resolution Fiber Distributed Measurements With
-                   Coherent {OFDR}",
-  booktitle     = "Proc. {ECOC}'00",
-  year          = "2000",
-  paper         = "11.3.4",
-  pages         = "109"
-}
-
-
-conference paper with a postdeadline type paper, the paper field is
-optional.
-From the August 2000 issue of "IEEE Photonics Technology Letters",
-page 1087, reference #12.
-@inproceedings{IEEEexample:confwithpapertype,
-  author        = "B. Mikkelsen and G. Raybon and R.-J. Essiambre and
-                   K. Dreyer and Y. Su. and L. E. Nelson and J. E. Johnson
-                   and G. Shtengel and A. Bond and D. G. Moodie and
-                   A. D. Ellis",
-  title         = "160 {Gbit/s} Single-channel Transmission Over 300 km 
-                   Nonzero-dispersion Fiber With Semiconductor Based
-                   Transmitter and Demultiplexer",
-  booktitle     = "Proc. {ECOC}'99",
-  year          = "1999",
-  paper         = "2-3",
-  type          = "postdeadline paper",
-  pages         = "28-29"
-}
-
-
-presented at a conference
-intype overrides the default "in" and causes the booktitle not to be
-emphasized (rendered in italics).
-From the February 2002 issue of "IEEE/ACM Transactions on Networking",
-page 163, reference #6.
-@inproceedings{IEEEexample:presentedatconf,
-  author        = "S. G. Finn and M. M{\'e}dard and R. A. Barry",
-  title         = "A Novel Approach to Automatic Protection Switching
-                   Using Trees",
-  intype        = "presented at the",
-  booktitle     = "Proc. Int. Conf. Commun.",
-  year          = "1997"
-}
-
-
-
-
-
-master's thesis, often the University name will be abbreviated and the
-state or country will be included in the address. The type field can
-used to override the default type "Master's thesis"
-From the June 2002 issue of "IEEE Transactions on Microelectromechanical
-Systems", page 186, reference #11.
-@mastersthesis{IEEEexample:masters,
-  author        = "Nin C. Loh",
-  title         = "High-Resolution Micromachined Interferometric
-                   Accelerometer",
-  school        = "Massachusetts Institute of Technology",
-  address       = "Cambridge",
-  year          = "1992"
-}
-
-
-master's thesis with a type field
-From the August 2001 issue of "IEEE/ACM Transactions on Networking",
-page 391, reference #12.
-@mastersthesis{IEEEexample:masterstype,
-  author        = "A. Karnik",
-  title         = "Performance of {TCP} Congestion Control with Rate
-                   Feedback: {TCP/ABR} and Rate Adaptive {TCP/IP}",
-  school        = "Indian Institute of Science",
-  type          = "M. Eng. thesis",
-  address       = "Bangalore, India",
-  month         = jan,
-  year          = "1999"
-}
-
-
-
-
-
-Ph.D. dissertation with a URL field, the university is abbreviated
-From the October 2001 issue of "IEEE/ACM Transactions on Networking",
-page 590, reference #11.
-@phdthesis{IEEEexample:phdurl,
-  author        = "Q. Li",
-  title         = "Delay Characterization and Performance Control of
-                   Wide-area Networks",
-  school        = "Univ. of Delaware",
-  address       = "Newark",
-  month         = may,
-  year          = "2000",
-  url           = "http://www.ece.udel.edu/~qli"
-}
-
-
-
-
-
-technical report
-From the August 2001 issue of "IEEE/ACM Transactions on Networking",
-page 490, reference #15.
-@techreport{IEEEexample:techrep,
-  author        = "R. Jain and K. K. Ramakrishnan and D. M. Chiu",
-  title         = "Congestion Avoidance in Computer Networks with a 
-                   Connectionless Network Layer",
-  institution   = "Digital Equipment Corporation",
-  address       = "MA",
-  number        = "DEC-TR-506",
-  month         = aug,
-  year          = "1987"
-}
-
-
-technical report with type
-for those times when "Tech. Rep." needs to be modified
-From the February 2001 issue of "IEEE/ACM Transactions on Networking",
-page 46, reference #8.
-@techreport{IEEEexample:techreptype,
-  author        = "J. Padhye and V. Firoiu and D. Towsley",
-  title         = "A Stochastic Model of {TCP} {R}eno Congestion Avoidance
-                   and Control",
-  institution   = "Univ. of Massachusetts",
-  address       = "Amherst, MA",
-  type          = "CMPSCI Tech. Rep.",
-  number        = "99-02",
-  year          = "1999"
-}
-
-
-technical report with type
-for those times when "Tech. Rep." needs to be modified
-This reference did not have an address.
-From the January 2000 issue of "IEEE Transactions on Communications",
-page 117, reference #6.
-@techreport{IEEEexample:techreptypeii,
-  author        = "D. Middleton and A. D. Spaulding",
-  title         = "A Tutorial Review of Elements of Weak Signal Detection
-                   in Non-{G}aussian {EMI} Environments",
-  institution   = "National Telecommunications and Information
-                   Administration ({NTIA}), U.S. Dept. of Commerce",
-  type          = "NTIA Report",
-  number        = "86-194",
-  month         = may,
-  year          = "1986"
-}
-
-
-
-
-
-an unpublished work
-for unpublished types, the note field is required. IEEE usually
-just uses the word "unpublished" for the note.
-From the August 2001 issue of "IEEE/ACM Transactions on Networking",
-page 391, reference #16.
-@unpublished{IEEEexample:unpublished,
-  author        = "T. J. Ott and N. Aggarwal",
-  title         = "{TCP} over {ATM}: {ABR} or {UBR}",
-  note          = "Unpublished"
-}
-
-
-
-
-
-electronic with a howpublished information field 
-From the August 2001 issue of "IEEE/ACM Transactions on Networking",
-page 391, reference #7.
-@electronic{IEEEexample:electronhowinfo,
-  author        = "V. Jacobson",
-  title         = "Modified {TCP} Congestion Avoidance Algorithm",
-  howpublished  = "end2end-interest mailing list",
-  url           = "ftp://ftp.isi.edu/end2end/end2end-interest-1990.mail",
-  month         = apr,
-  year          = "1990"
-}
-
-
-electronic with a howpublished information field 
-From the August 2001 issue of "IEEE/ACM Transactions on Networking",
-page 418, reference #31.
-@electronic{IEEEexample:electronhowinfo2,
-  author        = "V. Valloppillil and K. W. Ross",
-  title         = "Cache Array Routing Protocol v1.1",
-  howpublished  = "Internet draft",
-  url           = "http://ds1.internic.net/internet-drafts/draft-vinod-carp-v1-03.txt",
-  year          = "1998"
-}
-
-
-electronic with an organization and address
-From the February 2002 issue of "IEEE/ACM Transactions on Networking",
-page 114, reference #15.
-@electronic{IEEEexample:electronorgadd,
-  author        = "D. H. Lorenz and A. Orda",
-  title         = "Optimal Partition of {QoS} Requirements on Unicast
-                   Paths and Multicast Trees",
-  organization  = "Dept. Elect. Eng., Technion",
-  address       = "Haifa, Israel",
-  url           = "ftp://ftp.technion.ac.il/pub/supported/ee/Network/lor.mopq98.ps",
-  month         = jul,
-  year          = "1998"
-}
-
-
-
-
-
-U.S. patent
-Use the type field to override the patent type. e.g.,
-type = "Patent Application"
-The address is that of the assignee. Note that IEEE does not
-display the assignee, the address, and only displays one date.
-(if year is not present, the filed dates are used.) However, this
-information should be entered as other BibTeX styles may use it.
-alternatively, nationality could be entered as "U.S." 
-From the April 2000 issue of "IEEE Transactions on Communications",
-page 542, reference #6.
-@patent{IEEEexample:uspat,
-  author        = "Ronald E. Sorace and Victor S. Reinhardt and
-                   Steven A. Vaughn",
-  assignee      = "Hughes Aircraft Company",
-  address       = "Los Angeles, CA",
-  title         = "High-Speed Digital-to-{RF} Converter",
-  nationality   = "United States",
-  number        = "5668842",
-  dayfiled      = "28",
-  monthfiled    = feb,
-  yearfiled     = "1995",
-  day           = "16",
-  month         = sep,
-  year          = "1997"
-}
-
-
-Japanese Patent
-From the April 2000 issue of "IEEE Transactions on Communications",
-page 556, reference #6.
-@patent{IEEEexample:jppat,
-  author        = "U. Hideki",
-  title         = "Quadrature Modulation Circuit",
-  nationality   = "Japanese",
-  number        = "152932/92",
-  day           = "20",
-  month         = may,
-  year          = "1992"
-}
-
-
-French Patent request, the language field must be entered in lower case
-as this is the option name Babel uses. The nationality field needs to be
-capitalized. Because this is a patent request, the date filed fields are
-used while the date fields are left empty/missing. In other countries,
-the words "Patent Application", etc. are used instead.
-From the April 2000 issue of "IEEE Transactions on Communications",
-page 556, reference #9.
-@patent{IEEEexample:frenchpatreq,
-  author        = "F. Kowalik and M. Isard",
-  title         = "Estimateur d'un D{\'e}faut de Fonctionnement 
-                   d'un Modulateur en Quadrature et {\'E}tage de Modulation
-                   l'Utilisant",
-  language      = "french",
-  nationality   = "French",
-  type          = "Patent Request",
-  number        = "9500261",
-  dayfiled      = "11",
-  monthfiled    = jan,
-  yearfiled     = "1995"
-}
-
-
-
-
-
-a periodical
-From the April 2001 issue of "IEEE/ACM Transactions on Networking",
-page 160, reference #1.
-sort key is needed for sorting styles
-@periodical{IEEEexample:periodical,
-  title         = IEEE_M_PCOM # ", Special Issue on Wireless {ATM}",
-  volume        = "3",
-  month         = aug,
-  year          = "1996",
-  key           = "IEEE"
-}
-
-
-
-
-
-standard, IEEE does not use the address for standards, but it is good
-to provide one for BibTeX styles that use it.
-From the August 2001 issue of "IEEE/ACM Transactions on Networking",
-page 451, reference #2.
-@standard{IEEEexample:standard,
-  title         = "Wireless {LAN} Medium Access Control {(MAC)} and 
-                   Physical Layer {(PHY)} Specification",
-  organization  = "IEEE",
-  address       = "Piscataway, NJ",
-  number        = "802.11",
-  year          = "1997"
-}
-
-
-standard with type and revision, the type overrides the word standard
-(or std.). Here a standard number is not available and a revision number
-is used.
-From the August 2000 issue of "IEEE Photonics Technology Letters",
-page 1048, reference #13.
-@standard{IEEEexample:standardproposed,
-  title         = "Fiber Channel Physical Interface ({FC-PI})",
-  institution   = "NCITS",
-  address       = "Washington, DC",
-  type          = "Working Draft Proposed Standard",
-  revision      = "5.2",
-  year          = "1999"
-}
-
-
-standard draft as a misc with author
-From the May 2002 issue of "IEEE Journal of Selected Areas in
-Communication", page 725, reference #16.
-@misc{IEEEexample:draftasmisc,
-  author        = "I. Widjaja and A. Elwalid",
-  title         = "{MATE}: {MPLS} Adaptive Traffic Engineering",
-  howpublished  = "IETF Draft",
-  year          = "1999"
-}
-
-
-
-
-
-misc for a techreport like reference
-techreport is not perfectly suitable because this entry lacks
-an institution field
-From the August 2001 issue of "IEEE/ACM Transactions on Networking",
-page 490, reference #22.
-@misc{IEEEexample:miscforum,
-  author        = "L. Roberts",
-  title         = "Enhanced Proportional Rate Control Algorithm {PRCA}",
-  howpublished  = "{ATM} Forum Contribution 94-0735R1",
-  month         = aug,
-  year          = "1994"
-}
-
-
-misc for a white paper
-From the August 2001 issue of "IEEE/ACM Transactions on Networking",
-page 478, reference #4 - Note that the reference there (improperly?)
-used the author field for "Cisco".
-@misc{IEEEexample:whitepaper,
-  title         = "Advanced {QoS} Services for the Intelligent Internet",
-  howpublished  = "White Paper",
-  organization  = "Cisco",
-  month         = may,
-  year          = "1997"
-}
-
-
-misc for a data sheet
-From the November 2000 issue of "IEEE Photonics Technology Letters",
-page 1551, reference #6.
-@misc{IEEEexample:datasheet,
-  title         = "{PDCA12-70} Data Sheet",
-  organization  = "Opto Speed SA",
-  address       = "Mezzovico, Switzerland"
-}
-
-
-
-
-
-Other unusual references
-
-a private communication as a misc entry type
-sometimes the designation "personal communication" is used instead
-From the June 2002 issue of "IEEE Transactions on Information Theory",
-page 1725, reference #16.
-@misc{IEEEexample:private,
-  author        = "S. Konyagin",
-  howpublished  = "private communication",
-  year          = "1998"
-}
-
-
-an internet request for comments (RFC) as a misc entry type
-It would also be nice to add a URL to these types of things.
-RFCs can also be handled as electronic references.
-From the April 2002 issue of "IEEE/ACM Transactions on Networking",
-page 181, reference #14.
-@misc{IEEEexample:miscrfc,
-  author        = "K. K. Ramakrishnan and S. Floyd",
-  title         = "A Proposal to Add Explicit Congestion
-                   Notification ({ECN}) to {IP}",
-  howpublished  = "RFC 2481",
-  month         = jan,
-  year          = "1999"
-}
-
-
-a software package as a manual
-From the June 2002 issue of "IEEE/ASME Journal of Microelectromechanical
-Systems", page 205, reference #20.
-Sometimes they put the version/release information in the title.
-@manual{IEEEexample:softmanual,
-  title         = "SaberDesigner Reference Manual",
-  organization  = "Analogy, Inc.",
-  address       = "Beaverton, OR",
-  year          = "1998",
-  note          = "Release 4.3"
-}
-
-
-a software package as an electronic reference
-From the February 2003 issue of  "IEEE/ACM Transactions on Networking",
-page 46, reference #24. If there is no author or organization, a sorting
-key is required for sorting styles. It might be a good idea to include
-month and year fields as well.
-@electronic{IEEEexample:softonline,
-  title         = "Ucb/lbnl/vint Network Simulator---ns (Version 2)",
-  url           = "http://www-mash.cs.berkeley.edu/ns/",
-  key           = "ns"
-}
-
-
-misc for a German regulation
-In German, the first letters of nouns are capitalized, so we do so here.
-From the June 2002 issue of "IEEE Journal in Selected Areas in
-Communication", page 892, reference #9.
-@misc{IEEEexample:miscgermanreg,
-  title         = "{M}essung von {S}t{\"o}rfeldern an {A}nlagen 
-                   und {L}eitungen der {T}elekommunikation im
-                   {F}requenzbereich 9 {kHz} bis 3 {GHz}",
-  language      = "german",
-  howpublished  = "{M}e{\ss}vorschrift {R}eg {TP} {MV} 05",
-  organization  = "Regulierungsbeh{\"o}rde f{\"u}r {T}elekommunikation und
-                   {P}ost ({R}eg {TP})"
-}
-
-
-
-Ways to handle things like CCSDS's Blue Books
-journal article with a URL. However, this is not a very good approach
-because the Blue Books are not really journals and the author field has
-to be abused.
-From the June 2002 issue of "IEEE Transactions on Information Theory",
-page 1461, reference #7.
-@article{IEEEexample:bluebookarticle,
-  author        = "{Consulative Committee for Space Data Systems (CCSDS)}",
-  title         = "Telemetry Channel Coding",
-  journal       = "Blue Book",
-  number        = "4",
-  year          = "1999",
-  url           = "http://www.ccsds.org/documents/pdf/CCSDS-101.0-B-4.pdf"
-}
-
-
-CCSDS's Blue Book handled as a book
-However, it is not a good idea to have to use the author field for
-an organization (done here because the book entry type requires an
-author field).
-@book{IEEEexample:bluebookbook,
-  author        = "{Consulative Committee for Space Data Systems (CCSDS)}",
-  title         = "Telemetry Channel Coding",
-  series        = "Blue Book",
-  number        = "4",
-  publisher     = "{CCSDS}",
-  address       = "Newport Beach, {CA}",
-  year          = "1999",
-  url           = "http://www.ccsds.org/documents/pdf/CCSDS-101.0-B-4.pdf"
-}
-
-
-CCSDS's Blue Book handled as a manual
-This is a much better approach, but uses the howpublished field.
-@manual{IEEEexample:bluebookmanual,
-  title         = "Telemetry Channel Coding",
-  howpublished  = "ser. Blue Book, No. 4",
-  organization  = "Consulative Committee for Space Data Systems (CCSDS)",
-  address       = "Newport Beach, CA",
-  year          = "1999",
-  url           = "http://www.ccsds.org/documents/pdf/CCSDS-101.0-B-4.pdf"
-}
-
-
-
-CCSDS's Blue Book handled as a standard
-Probably the best approach for this particular case because the work
-is standard related. Note that IEEE does not display the address for
-standards.
-@standard{IEEEexample:bluebookstandard,
-  title         = "Telemetry Channel Coding",
-  howpublished  = "ser. Blue Book, No. 4",
-  organization  = "Consulative Committee for Space Data Systems (CCSDS)",
-  address       = "Newport Beach, CA",
-  type          = "Recommendation for Space Data System Standard",
-  number        = "101.0-B-4",
-  month         = May,
-  year          = "1999",
-  url           = "http://www.ccsds.org/documents/pdf/CCSDS-101.0-B-4.pdf"
-}
-
-
-
-
-
-
-
-
-An example of a IEEEtran control entry which can change some IEEEtran.bst
-settings. An entry like this must be cited via \bstctlcite{} command
-before the first real \cite{}. The same entry key cannot be called twice
-(just like multiple \cite{} of the same entry key place only one entry
-in the bibliography.)
-The available control fields are:
-
-CTLuse_article_number
-"no" turns off the display of the number for articles.
-"yes" enables
-
-CTLuse_paper
-"no" turns off the display of the paper and type fields in inproceedings.
-"yes" enables
-
-CTLuse_forced_etal 
-"no" turns off the forced use of "et al."
-"yes" enables
-
-CTLmax_names_forced_etal
-The maximum number of names that can be present beyond which an "et al."
-usage is forced. Be sure that CTLnames_show_etal (below)
-is not greater than this value!
-
-CTLnames_show_etal
-The number of names that will be shown with a forced "et al.".
-Must be less than or equal to CTLmax_names_forced_etal
-
-CTLuse_alt_spacing 
-"no" turns off the alternate interword spacing for entries with URLs.
-"yes" enables
-
-CTLalt_stretch_factor
-If alternate interword spacing for entries with URLs is enabled, this is
-the interword spacing stretch factor that will be used. For example, the
-default "4" here means that the interword spacing in entries with URLs can
-stretch to four times normal. Does not have to be an integer.
-
-CTLdash_repeated_names
-"no" turns off the "dashification" of repeated (i.e., identical to those
-of the previous entry) names. IEEE normally does this.
-"yes" enables
-
-CTLname_format_string
-The name format control string as explained in the BibTeX style hacking
-guide.
-IEEE style "{f.~}{vv~}{ll}{, jj}" is the default,
-
-CTLname_latex_cmd
-A LaTeX command that each name will be fed to (e.g., "\textsc").
-Leave empty if no special font is desired for the names.
-The default is empty.
-
-CTLname_url_prefix
-The prefix text used before URLs.
-The default is "[Online]. Available:" A space will be inserted after this
-text. If this space is not wanted, just use \relax at the end of the
-prefix text.
-
-
-Those fields that are not to be changed can be left out.
-@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
-  CTLuse_article_number     = "yes",
-  CTLuse_paper              = "yes",
-  CTLuse_forced_etal        = "no",
-  CTLmax_names_forced_etal  = "10",
-  CTLnames_show_etal        = "1",
-  CTLuse_alt_spacing        = "yes",
-  CTLalt_stretch_factor     = "4",
-  CTLdash_repeated_names    = "yes",
-  CTLname_format_string     = "{f.~}{vv~}{ll}{, jj}",
-  CTLname_latex_cmd         = "",
-  CTLname_url_prefix        = "[Online]. Available:"
-}
 
 
